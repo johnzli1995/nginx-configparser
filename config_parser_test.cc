@@ -9,3 +9,11 @@ TEST(NginxConfigParserTest, SimpleConfig) {
 
   EXPECT_TRUE(success);
 }
+
+TEST(NginxConfigParserTestTwo, SimpleConfig) {
+  NginxConfigParser parser;
+  NginxConfig out_config;
+
+  bool success = parser.Parse("exampletwo_config", &out_config);
+  EXPECT_TRUE(success);
+}
