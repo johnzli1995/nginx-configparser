@@ -2,6 +2,8 @@
 #include "config_parser.h"
 
 TEST(NginxConfigParserTest, SimpleConfig) {
+// This tests the example file given to us. It should pass.
+
   NginxConfigParser parser;
   NginxConfig out_config;
 
@@ -11,6 +13,9 @@ TEST(NginxConfigParserTest, SimpleConfig) {
 }
 
 TEST(NginxConfigParserTestTwo, SimpleConfig) {
+// This tests a unit that has nested brackets. Specifically,
+// two locations. It should be parsed, but this tests fails.
+
   NginxConfigParser parser;
   NginxConfig out_config;
 
